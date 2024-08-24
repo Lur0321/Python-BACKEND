@@ -1,0 +1,101 @@
+2. Navegar en el Sistema de Archivos
+Familiarízate con algunos comandos básicos para navegar en el sistema de archivos:
+
+pwd: Muestra el directorio actual.
+
+sh
+Copiar código
+pwd
+ls (Linux/macOS) o dir (Windows): Lista los archivos y directorios en el directorio actual.
+
+sh
+Copiar código
+ls  # Linux/macOS
+dir # Windows
+cd: Cambia de directorio.
+
+sh
+Copiar código
+cd nombre_del_directorio
+cd ..: Sube un nivel en la jerarquía de directorios.
+
+sh
+Copiar código
+cd ..
+3. Crear y Editar Archivos
+touch (Linux/macOS) o type nul > (Windows): Crea un archivo vacío.
+
+sh
+Copiar código
+touch script.py         # Linux/macOS
+type nul > script.py    # Windows
+nano o vim (Linux/macOS): Editores de texto en la terminal.
+
+sh
+Copiar código
+nano script.py
+vim script.py
+En Windows, puedes usar el Bloc de Notas desde la terminal:
+
+sh
+Copiar código
+notepad script.py
+4. Ejecutar Scripts de Python
+Escribe tu script: Crea un archivo llamado script.py con el siguiente contenido como ejemplo:
+
+python
+Copiar código
+print("¡Hola, mundo!")
+Guarda y cierra el archivo.
+
+Ejecuta el script en la terminal:
+
+sh
+Copiar código
+python script.py
+Asegúrate de estar en el mismo directorio donde está guardado tu script.
+
+5. Instalar y Gestionar Paquetes
+Instalar un paquete: Usa pip, el gestor de paquetes de Python.
+
+sh
+Copiar código
+pip install nombre_del_paquete
+Listar paquetes instalados:
+
+sh
+Copiar código
+pip list
+Actualizar un paquete:
+
+sh
+Copiar código
+pip install --upgrade nombre_del_paquete
+Desinstalar un paquete:
+
+sh
+Copiar código
+pip uninstall nombre_del_paquete
+6. Uso de Entornos Virtuales
+Los entornos virtuales te permiten gestionar dependencias de proyectos de manera aislada.
+
+Crear un entorno virtual:
+
+sh
+Copiar código
+python -m venv nombre_del_entorno
+Activar el entorno virtual:
+
+Windows:
+sh
+Copiar código
+nombre_del_entorno\Scripts\activate
+macOS/Linux:
+sh
+Copiar código
+source nombre_del_entorno/bin/activate
+Desactivar el entorno virtual:
+
+sh
+Copiar código
+deactivate
